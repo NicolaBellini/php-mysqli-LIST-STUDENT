@@ -3,7 +3,11 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 0;
-  height: 100px;
+  height: calc(100%-100px);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 p {

@@ -1,3 +1,19 @@
+<?php
+
+
+
+
+
+function getHref($uri){
+  $scheme = $_SERVER['REQUEST_SCHEME'];
+  $host = $_SERVER['HTTP_HOST'];
+  
+  echo "$scheme://$host/$uri";
+}
+
+
+?>
+
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -9,16 +25,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="<?php getHref('PHP/php-mysqli/views/') ?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">elenco studenti</a>
+            <a class="nav-link" href="<?php getHref('PHP/php-mysqli/views/students.php') ?>">elenco studenti</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">login</a>
+            <a class="nav-link" href="<?php getHref('PHP/php-mysqli/views/login.php') ?>">login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">logout</a>
+            <a class="nav-link" href="<?php getHref('PHP/php-mysqli/views/logout.php') ?>">logout</a>
           </li>
          
         </ul>
