@@ -19,7 +19,7 @@
         <td><?php echo $row->name ?></td>
         <td><?php echo $row->surname ?></td>
         <td><?php echo $row->enrolment_date ?></td>
-        <td><a href="<?php getHref('PHP/php-mysqli/student.php') ?>" class="btn btn-outline-primary ">vai</a></td>
+        <td><a href="<?php getHref('PHP/php-mysqli/student.php'. '?id='.$row->id) ?>" class="btn btn-outline-primary ">vai</a></td>
 
    
       </tr>

@@ -10,7 +10,21 @@ if(session_status() === PHP_SESSION_NONE){
 // funzione middleware
 checkLoggedIn();
 
+if(isset($_GET['id'])){
+  $studentid = $_GET['id'];
+  
+$stmt = $conn->prepare("SELECT * from `students` WHERE `id` = ? ");
+$stmt->bind_param('i', $studentid);
+$stmt->execute();
+$result = $stmt->get_result();
 
+$student= $result->fetch_object();
+
+
+var_dump($student);
+}else{
+  header('Location: index.php');
+}
 
 
 
