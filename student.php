@@ -10,12 +10,6 @@ if(session_status() === PHP_SESSION_NONE){
 // funzione middleware
 checkLoggedIn();
 
-$limit = 20;
-
-$stmt = $conn->prepare("SELECT * from `students` LIMIT  ? ");
-$stmt->bind_param('i', $limit);
-$stmt->execute();
-$result = $stmt->get_result();
 
 
 
@@ -26,7 +20,7 @@ require_once __DIR__ .'/views/layouts/header.php';
 
 
 
-require_once __DIR__.'/views/pages/studentsPage.php';
+require_once __DIR__.'/views/pages/studentPage.php';
 
 
 
