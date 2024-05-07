@@ -3,9 +3,9 @@
 <h1><?php echo $student->name  ?> <?php echo $student->surname  ?></h1>
 
 <ul>
-  <li><?php echo $student->registration_number ?></li>
-  <li><?php echo $student->fiscal_code ?></li>
-  <li><?php echo $student->date_of_birth ?></li>
+  <li>matricola: <?php echo $student->registration_number ?></li>
+  <li>CF: <?php echo $student->fiscal_code ?></li>
+  <li>data di nascita: <?php echo $student->date_of_birth ?></li>
 </ul>
 
 

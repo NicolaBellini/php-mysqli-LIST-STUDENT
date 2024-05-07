@@ -21,7 +21,7 @@ $result = $stmt->get_result();
 $student= $result->fetch_object();
 
 
-var_dump($student);
+
 }else{
   header('Location: index.php');
 }
