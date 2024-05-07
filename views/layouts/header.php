@@ -25,16 +25,16 @@ function getHref($uri){
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php getHref('PHP/php-mysqli/views/') ?>">Home</a>
+            <a class="nav-link active" aria-current="page" href="<?php getHref('PHP/php-mysqli/') ?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php getHref('PHP/php-mysqli/views/students.php') ?>">elenco studenti</a>
+            <a class="nav-link" href="<?php getHref('PHP/php-mysqli/students.php') ?>">elenco studenti</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php getHref('PHP/php-mysqli/views/login.php') ?>">login</a>
+            <a class="nav-link" href="<?php getHref('PHP/php-mysqli/login.php') ?>">login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php getHref('PHP/php-mysqli/views/logout.php') ?>">logout</a>
+            <a class="nav-link" href="<?php getHref('PHP/php-mysqli/logout.php') ?>">logout</a>
           </li>
          
         </ul>
