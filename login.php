@@ -25,6 +25,7 @@ $user = $result->fetch_object();
 if($user){
   $_SESSION['userID'] = $user->id;
   $_SESSION['userEmail'] = $user->email;
+  header('Location: index.php');
 }
 var_dump($user);
 
